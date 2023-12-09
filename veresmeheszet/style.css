@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.5)),url("repul.jpg");
+    box-shadow: 0 30px 70px 0 rgba(0,0,0,0.4);
+    background-size: cover;
+    background-position: center;
+}
+.nav {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    width: 200px;
+    cursor: pointer;
+}
+.nav ul li{
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+.nav ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: rgba(103, 69, 0);
+    left: 0;
+    bottom: -10px;
+    position: absolute;
+    transition: 0.5s;
+}
+.nav ul li:hover::after{
+    width: 100%;
+}
+.nav ul li a {
+    text-decoration: none;
+    color: #ffff;
+    text-transform: uppercase;
+}
+.bannerszoveg {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #ffff;
+    text-transform: uppercase;
+}
+.bannerszoveg h1{
+    font-size: 50px;
+    -webkit-text-stroke: .5px #ffff;
+    text-shadow: 0px 0px 25px rgba(255,255,255,0.77);
+    color: transparent;
+    background-image: linear-gradient(#ffff, #ffff);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -2000px 0;
+    animation: backcolor 7s linear infinite alternate;
+}
+@keyframes backcolor{
+    100%{
+        background-position: 0 0;
+    }
+}
+.bannerszoveg p{
+    margin-top: 1%;
+    letter-spacing: .7em;
+}
+.oszlop {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 80px;
+    box-shadow: 0 30px 70px 0 rgba(0,0,0,0.4);
+}
+.rolunk {
+    margin: 10px 50px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.rolunkelem img{
+    width: 40%;
+    margin-left: -90px;
+}
+.rolunkelem p{
+    flex-basis: 30%;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+    margin-bottom: 5px;
+    padding: 20px 10px;
+    box-sizing: border-box;
+}
+.kapcsolat{
+    background-image: linear-gradient(rgba(103, 69, 0, 0.9),rgba(103, 69, 0, 0.65)),url("./kaptar.png");
+    color: #ffff;
+    box-shadow: inset 0 10px 10px #00000034;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.partnerek{
+    background-image: linear-gradient(rgba(103, 69, 0, 0.9),rgba(103, 69, 0, 0.65)),url("./kaptar2.png");
+    color: #ffff;
+    box-shadow: inset 0 10px 10px #00000034;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.tamasi, .biharikap, .telo, .cim, .email{
+    width: 60%;
+    margin-bottom: 50px;
+}
+.email{
+    padding: 50px 0;
+    margin-top: -50px;
+}
+.email p{
+    margin-top: 20px;
+}
+.araink{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.araink .row {
+    padding: 10px 60px;
+}
+.araink img{
+    width: 80%;
+}
+.akac, .repce, .vegyes {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: transform .2s;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    width: 250px;
+    
+}
+.akac:hover, .repce:hover, .vegyes:hover {
+    transform: scale(1.2);
+}
+.araink .arainkszoveg {
+    padding: 50px;
+}
+.szekcionev {
+    padding-top: 70px;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+
+}
+.tamasi a, .biharikap a{
+    text-decoration: none;
+    color: rgb(203, 203, 203);
+    letter-spacing: .3em;
+}
+.tamasi a:active, .biharikap a:active{
+    color: rgb(115, 115, 115);
+}
+.lab{
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+}
+.kislabszoveg {
+    font-size: 10px;
+}
